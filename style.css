@@ -1,0 +1,181 @@
+*{
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  margin:0;
+  height:100vh;
+  background:radial-gradient(circle at top,#111,#05070f);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
+
+/* ================= SPLASH ================= */
+
+.splash{
+  text-align:center;
+}
+
+/* TITLE – fade in + glow */
+.title{
+  font-size:42px;
+  color:#00f6ff;
+  opacity:0; /* start hidden */
+  text-shadow:0 0 35px #00f6ff;
+  animation:
+    fadeInTitle 1.5s ease forwards,
+    glow 2s infinite alternate;
+  transition:transform 1s ease;
+}
+
+@keyframes fadeInTitle{
+  from{
+    opacity:0;
+    transform:scale(0.9);
+  }
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+@keyframes glow{
+  from{ text-shadow:0 0 15px #00f6ff; }
+  to{ text-shadow:0 0 40px #00f6ff; }
+}
+
+.title-up{
+  transform:translateY(-120px);
+}
+
+/* MENU */
+.menu{
+  margin-top:20px;
+}
+
+.menu button{
+  opacity:0;
+  transform:scale(0.6);
+  animation:popBtn 0.6s forwards;
+}
+
+.menu button:nth-child(1){ animation-delay:0.2s; }
+.menu button:nth-child(2){ animation-delay:0.6s; }
+
+@keyframes popBtn{
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+button{
+  background:transparent;
+  border:2px solid #ff00ff;
+  color:#ff00ff;
+  padding:12px 24px;
+  border-radius:25px;
+  margin:8px;
+  cursor:pointer;
+  box-shadow:0 0 15px #ff00ff;
+  transition:0.25s;
+}
+
+button:hover{
+  background:#ff00ff;
+  color:black;
+}
+
+.hidden{
+  display:none;
+}
+
+/* ================= GAME ================= */
+
+.game{
+  text-align:center;
+}
+
+.status{
+  margin-bottom:15px;
+  color:#00f6ff;
+}
+
+.board{
+  display:grid;
+  grid-template-columns:repeat(3,100px);
+  gap:12px;
+}
+
+.cell{
+  width:100px;
+  height:100px;
+  background:#0c0f1d;
+  border-radius:22px;
+  font-size:50px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-shadow:0 0 18px #00f6ff55;
+  opacity:0;
+  animation:cellIn 0.5s forwards;
+}
+
+.cell:nth-child(1){ animation-delay:0.1s; transform:translateX(-80px); }
+.cell:nth-child(2){ animation-delay:0.2s; transform:translateY(-80px); }
+.cell:nth-child(3){ animation-delay:0.3s; transform:translateX(80px); }
+.cell:nth-child(4){ animation-delay:0.4s; transform:translateY(-80px); }
+.cell:nth-child(5){ animation-delay:0.5s; transform:scale(0.2); }
+.cell:nth-child(6){ animation-delay:0.6s; transform:translateY(80px); }
+.cell:nth-child(7){ animation-delay:0.7s; transform:translateX(-80px); }
+.cell:nth-child(8){ animation-delay:0.8s; transform:translateY(80px); }
+.cell:nth-child(9){ animation-delay:0.9s; transform:translateX(80px); }
+
+@keyframes cellIn{
+  to{
+    opacity:1;
+    transform:translate(0) scale(1);
+  }
+}
+
+.cell.X{
+  color:#00f6ff;
+  text-shadow:0 0 15px #00f6ff;
+}
+
+.cell.O{
+  color:#ff00ff;
+  text-shadow:0 0 15px #ff00ff;
+}
+
+/* ================= POPUP ================= */
+
+.popup{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.popup.hidden{
+  display:none;
+  pointer-events:none;
+}
+
+.popup-box{
+  background:#0c0f1d;
+  padding:30px 45px;
+  border-radius:25px;
+  box-shadow:0 0 30px #00f6ff,0 0 60px #ff00ff;
+}
+
+.popup-sub{
+  color:#ff00ff;
+  margin-bottom:18px;
+}
