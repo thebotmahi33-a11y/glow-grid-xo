@@ -15,7 +15,7 @@ A small, polished Tic Tac Toe game built with **HTML, CSS, and vanilla JavaScrip
 
 ## 🚀 Live Demo
 
-> Add the deployed URL here after deployment.
+[**Play Neon Tic Tac Toe →**](https://glow-grid-xo.vercel.app/)
 
 ## 🛠️ Tech Stack
 
