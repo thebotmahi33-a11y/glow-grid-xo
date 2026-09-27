@@ -1,4 +1,4 @@
-# Neon Tic Tac Toe
+# Glow Grid XO
 
 A small, polished Tic Tac Toe game built with **HTML, CSS, and vanilla JavaScript**, featuring a neon-inspired UI, animated transitions, Player vs Player mode, and a defensive Computer opponent.
 
@@ -15,7 +15,7 @@ A small, polished Tic Tac Toe game built with **HTML, CSS, and vanilla JavaScrip
 
 ## 🚀 Live Demo
 
-[**Play Neon Tic Tac Toe →**](https://glow-grid-xo.vercel.app/)
+[**Play Glow Grid XO →**](https://glow-grid-xo.vercel.app/)
 
 ## 🛠️ Tech Stack
 
