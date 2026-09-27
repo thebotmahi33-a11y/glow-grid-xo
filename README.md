@@ -15,8 +15,6 @@ A small, polished Tic Tac Toe game built with **HTML, CSS, and vanilla JavaScrip
 
 ## 🚀 Live Demo
 
-Deploy this repository with Vercel, GitHub Pages, Netlify, or any static hosting provider.
-
 > Add the deployed URL here after deployment.
 
 ## 🛠️ Tech Stack
@@ -25,7 +23,6 @@ Deploy this repository with Vercel, GitHub Pages, Netlify, or any static hosting
 - CSS3
 - JavaScript (ES6+)
 - CSS animations and transitions
-- GitHub + Vercel for hosting
 
 ## 🎮 How to Play
 
@@ -70,21 +67,6 @@ cd tic-tac-toe-neon
 ```
 
 Then open `index.html`.
-
-For a more realistic local development workflow, serve the folder with any static HTTP server.
-
-## 🌐 Deployment
-
-Because this is a static site, it can be deployed directly to Vercel without a backend.
-
-### Vercel
-
-1. Import the GitHub repository into Vercel.
-2. Leave the framework preset as **Other** (or static site).
-3. No build command is required.
-4. Deploy.
-
-After deployment, add the live URL to the **Live Demo** section above.
 
 ## 📌 Roadmap
 
